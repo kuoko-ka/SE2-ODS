@@ -24,8 +24,8 @@ session_start();
             <li><a href="#">Contact</a></li>
         </ul>
         <div class="auth-buttons">
-            <button class="login-btn" onclick="openLoginModal()">Login</button>
-            <button class="signup-btn">Sign Up</button>
+            <button class="login-btn"  onclick="location.href='inner/login.php'">Login</button>
+            <button class="signup-btn"  onclick="location.href='inner/signup.php'">Sign Up</button>
     </nav>
         </div>
 </header>

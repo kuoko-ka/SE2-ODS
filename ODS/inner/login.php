@@ -3,26 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="kupal.css">
-    <title>Sign Up</title>
+    <link rel="stylesheet" href="/css/inamo.css">
+    <title>Log In</title>
 </head>
 <body>
-    <div class="left"></div>
     <div class="right">
         <div class="container">
-            <h2>Sign Up</h2>
+            <h2>Log In</h2>
             <form>
-                <label for="text">First Name</label>
-                <input type="text" placeholder="First Name" id = "fname" required>
-
-                <label for="text">Last Name</label>
-                <input type="text1" placeholder="Last Name" id = "lname" required>
-
                 <label for="text">Email</label>
                 <input type="email" placeholder="Email" id = "email" required>
 
                 <label for="text">Password</label>
                 <input type="password" placeholder="Password" id = "password" required>
+                <a href="">Forget Password?</a>
 
                 <div class="radio-group">
                     <input type="radio" id="client" name="role" value="client" required>
@@ -30,13 +24,24 @@
                     <input type="radio" id="provider" name="role" value="provider" required>
                     <label for="provider">Service Provider</label>
                 </div>
-                <button id ="submit" type="submit" class="signup-btn">SIGN UP</button>
+                <button type="submit" class="signup-btn" id = "submit" >LOG IN</button>
             </form>
-            <p class="terms">By signing up you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
-            <p class="login-link">Already have an account? <a href="login.html"> Log In</a></p>
+
+            <p class="or">or</p>
+
+            <div class="button-container">
+                <button class="social-btn google">
+                    Google <img src="google-icon-logo-svgrepo-com.svg" alt="Google">
+                </button>
+                <button class="social-btn facebook">
+                    Facebook <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+                </button>
+            </div>
+            <p class="login-link">Dont have an account? <a href="signup.html"> Sign Up</a></p>
         </div>
     </div>
-<script type = "module" src = "signup.js" defer></script>
+    <div class="left"></div>
+<script type = "module" src = "/jscript/login.js" defer></script>
 </body>
 </html>
 </body>

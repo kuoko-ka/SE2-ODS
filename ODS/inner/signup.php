@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="kupal.css">
+    <link rel="stylesheet" href="/css/kupal.css">
     <title>Sign Up</title>
 </head>
 <body>
@@ -36,7 +36,7 @@
             <p class="login-link">Already have an account? <a href="login.html"> Log In</a></p>
         </div>
     </div>
-<script type = "module" src = "signup.js" defer></script>
+<script type = "module" src = "/jscript/signup.js" defer></script>
 </body>
 </html>
 </body>
