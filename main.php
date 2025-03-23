@@ -58,22 +58,24 @@ session_start();
         }
 
         .login-btn, .signup-btn {
-            padding: 8px 15px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+    padding: 8px 15px;
+    background: #555;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
-        .login-btn {
-            background: #007bff;
-            color: white;
-        }
 
-        .signup-btn {
-            background: orange;
-            color: white;
-        }
+.login-btn:hover {
+    background: #0056b3; 
+}
+
+
+.signup-btn:hover {
+    background: #e69500; 
+}
 
       
         .hero {
@@ -94,7 +96,7 @@ session_start();
 
         .hero .btn {
             padding: 12px 25px;
-            background: white;
+            background: #555;
             color: #007bff;
             border-radius: 5px;
             text-decoration: none;
@@ -210,6 +212,38 @@ session_start();
         .popup-overlay.show .popup {
             transform: scale(1);
         }
+
+
+        .nav-links a,
+.hero .btn {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out; 
+}
+
+
+.nav-links a:hover {
+    color: orange; 
+}
+
+.hero .btn:hover {
+    background: #0056b3; 
+    color: white;
+}
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: orange; 
+}
+
+
     </style>
 </head>
 <body>
