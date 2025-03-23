@@ -75,7 +75,7 @@ session_start();
             color: white;
         }
 
-        
+      
         .hero {
             text-align: center;
             padding: 80px 20px;
@@ -104,7 +104,7 @@ session_start();
             margin-top: 15px;
         }
 
-        
+       
         .features {
             text-align: center;
             padding: 50px;
@@ -124,7 +124,7 @@ session_start();
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        
+       
         footer {
             text-align: center;
             padding: 20px;
@@ -141,7 +141,7 @@ session_start();
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
-            display: none;
+            display: flex; 
             justify-content: center;
             align-items: center;
             opacity: 0;
@@ -188,7 +188,7 @@ session_start();
             margin-top: 5px;
         }
 
-       
+    
         .close-btn {
             position: absolute;
             top: 10px;
@@ -202,8 +202,8 @@ session_start();
             color: #000;
         }
 
+   
         .popup-overlay.show {
-            display: flex;
             opacity: 1;
         }
 
@@ -214,10 +214,11 @@ session_start();
 </head>
 <body>
 
+<!-- Header & Navigation -->
 <header>
     <nav class="navbar">
         <div class="logo">
-            <img src="placeholder-logo.png" alt="ODS WebApp"> 
+            <img src="placeholder-logo.png" alt="ODS WebApp"> <!-- Placeholder Logo -->
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
@@ -232,14 +233,14 @@ session_start();
     </nav>
 </header>
 
-
+<!-- Hero Section -->
 <section class="hero">
     <h1>Find Trusted Home Service Providers Easily</h1>
     <p>Book professional plumbers, cleaners, electricians, and more with just a few clicks.</p>
     <a href="#" class="btn">Get Started</a>
 </section>
 
-
+<!-- Features Section -->
 <section class="features">
     <h2>Why Choose ODS WebApp?</h2>
     <div class="feature-container">
@@ -258,13 +259,13 @@ session_start();
     </div>
 </section>
 
-
+<!-- Footer -->
 <footer>
     <p>&copy; <?php echo date("Y"); ?> ODS WebApp. All Rights Reserved.</p>
 </footer>
 
-
-<div class="popup-overlay" id="loginPopup">
+<!-- Login Popup -->
+<div class="popup-overlay show" id="loginPopup">
     <div class="popup">
         <span class="close-btn" onclick="closePopup()">&times;</span>
         <h2>Login</h2>
@@ -275,7 +276,7 @@ session_start();
     </div>
 </div>
 
-
+<!-- JavaScript -->
 <script>
     function openPopup() {
         let popupOverlay = document.getElementById("loginPopup");
