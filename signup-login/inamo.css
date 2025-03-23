@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+}
+.left {
+    flex: 1;
+    background: url('meow.jpg') no-repeat center center;
+    background-size: cover;
+}
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    width: 80%;
+    max-width: 400px;
+}
+
+.container a{
+    color: #007BFF;
+}
+h2 {
+    margin-right: 200px;
+    font-weight: bold;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    font-size: 50px;
+    color: #E5A675;
+    
+}
+
+input[type="email"], input[type="password"] {
+width: 100%;
+padding: 10px;
+margin-bottom:20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    font-weight: bold;
+
+}
+.radio-group input {
+    margin-right: 5px;
+}
+.radio-group label {
+    margin-right: 15px;
+    align-items: center;
+}
+
+.signup-btn {
+    width: 70%;
+    padding: 20px;
+    background-color: #E5A675;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: bold;
+    margin-bottom: 20px;
+}
+
+.login-link {
+    margin-top: 10px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 90px;
+}
+.login-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 15px;
+    }
+    
+    .social-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 100;
+    }
+    
+    .social-btn img {
+    width: 20px;
+    height: 20px;
+    }
+    
+    .social-btn:hover {
+    background-color: #f1f1f1;
+    }
+    
+    .google img {
+    width: 22px;
+    }
+    
+    .facebook img {
+    width: 18px;
+    }
+    .or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    }
+    
+    

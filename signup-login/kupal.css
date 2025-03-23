@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+}
+.left{
+    flex: 1;
+    background: url('kupal.jpg') no-repeat center center/cover;
+}
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    width: 100%; /* Adjust container width */
+    max-width: 400px;
+}
+
+h2 {
+    margin-right: 200px;
+    font-weight: bold;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    font-size: 50px;
+    color: #E5A675;
+    
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="text1"] {
+width: 100%;
+padding: 10px;
+margin-bottom:20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    font-weight: bold;
+
+}
+.radio-group input {
+    margin-right: 5px;
+}
+.radio-group label {
+    margin-right: 15px;
+    align-items: center;
+}
+
+.signup-btn {
+    width: 70%;
+    padding: 20px;
+    background-color: #E5A675;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: bold;
+    margin-bottom: 20px;
+}
+
+.terms {
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.terms a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.login-link {
+    margin-top: 10px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 90px;
+}
+.login-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
