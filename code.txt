@@ -307,7 +307,7 @@ session_start();
             margin-top: auto;
         }
 
-      
+        /* Responsive design */
         @media (max-width: 768px) {
             .navbar {
                 padding: 15px 20px;
@@ -328,26 +328,6 @@ session_start();
                 width: 95%;
             }
         }
-
-            .signup-link {
-                margin-top: 15px;
-                text-align: center;
-                font-size: 14px;
-            }
-
-            .signup-text {
-                color: #007bff;
-                text-decoration: none;
-                font-weight: bold;
-                transition: color 0.3s ease;
-            }
-
-            .signup-text:hover {
-                color: #0056b3;
-                text-decoration: underline;
-                cursor: pointer;
-            }
-
     </style>
 </head>
 <body>
@@ -434,7 +414,6 @@ session_start();
             <input type="email" placeholder="Email" required>
             <input type="password" placeholder="Password" required>
             <button type="submit">Login</button>
-            <p class="signup-link">Don't have an account? <a href="#" class="signup-text">Sign up now</a></p>
         </form>
     </div>
 </div>
@@ -446,12 +425,12 @@ session_start();
 
 <!-- JavaScript -->
 <script>
-  
+    // Carousel functionality
     let currentSlide = 0;
     const slides = document.querySelectorAll('.carousel-slide');
     const totalSlides = slides.length;
     
-
+    // Create indicators
     const indicatorsContainer = document.querySelector('.carousel-indicators');
     for (let i = 0; i < totalSlides; i++) {
         const indicator = document.createElement('div');
@@ -460,11 +439,12 @@ session_start();
         indicator.onclick = () => goToSlide(i);
         indicatorsContainer.appendChild(indicator);
     }
-
+    
+    // Function to update carousel display
     function updateCarousel() {
         document.querySelector('.carousel').style.transform = `translateX(-${currentSlide * 100}%)`;
         
-    
+        // Update indicators
         document.querySelectorAll('.indicator').forEach((indicator, index) => {
             if (index === currentSlide) {
                 indicator.classList.add('active');
@@ -474,23 +454,24 @@ session_start();
         });
     }
     
- 
+    // Function to move to a specific slide
     function goToSlide(slideIndex) {
         currentSlide = slideIndex;
         updateCarousel();
     }
     
-
+    // Function to move slides
     function moveSlide(step) {
         currentSlide = (currentSlide + step + totalSlides) % totalSlides;
         updateCarousel();
     }
     
+    // Auto-advance carousel
     setInterval(() => {
         moveSlide(1);
     }, 5000);
     
-
+    // Login Modal functionality
     const loginModal = document.getElementById('loginModal');
     
     function openLoginModal() {
@@ -501,16 +482,12 @@ session_start();
         loginModal.style.display = 'none';
     }
     
+    // Close modal when clicking outside
     window.onclick = function(event) {
         if (event.target === loginModal) {
             closeLoginModal();
         }
     }
-
-    document.addEventListener('DOMContentLoaded', function() {
-    openLoginModal();
-});
-
 </script>
 
 </body>
