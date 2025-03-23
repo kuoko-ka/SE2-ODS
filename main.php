@@ -211,7 +211,7 @@ session_start();
         .features {
             text-align: center;
             padding: 50px;
-            background: white;
+           
             margin: 20px auto;
         }
 
