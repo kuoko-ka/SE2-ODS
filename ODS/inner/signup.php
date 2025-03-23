@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/kupal.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="left"></div>
+    <div class="right">
+        <div class="container">
+            <h2>Sign Up</h2>
+            <form>
+                <label for="text">First Name</label>
+                <input type="text" placeholder="First Name" id = "fname" required>
+
+                <label for="text">Last Name</label>
+                <input type="text1" placeholder="Last Name" id = "lname" required>
+
+                <label for="text">Email</label>
+                <input type="email" placeholder="Email" id = "email" required>
+
+                <label for="text">Password</label>
+                <input type="password" placeholder="Password" id = "password" required>
+
+                <div class="radio-group">
+                    <input type="radio" id="client" name="role" value="client" required>
+                    <label for="client">Client</label>
+                    <input type="radio" id="provider" name="role" value="provider" required>
+                    <label for="provider">Service Provider</label>
+                </div>
+                <button id ="submit" type="submit" class="signup-btn">SIGN UP</button>
+            </form>
+            <p class="terms">By signing up you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+            <p class="login-link">Already have an account? <a href="login.html"> Log In</a></p>
+        </div>
+    </div>
+<script type = "module" src = "/jscript/signup.js" defer></script>
+</body>
+</html>
+</body>
+</html>
