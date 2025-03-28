@@ -1,43 +1,42 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ODS WebApp - On-Demand Services</title>
-    <link rel="stylesheet" href="../css/providerside.css">
-</head>
-
-<header class = "header">
-    <div class="logo">
-        <img src="../imgs/placeholder-logo.png" alt="ODS WebApp">
-    </div>
-        <ul>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Whats new</a></li>
-            <li><a href="#">About us </a></li>
-            <li><a href="#">Support</a></li>
-        </ul>
-</header>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ODS WebApp - On-Demand Services</title>
+        <link rel="stylesheet" href="../css/providerside.css">
+    </head>
+    <body>
+        <header class = "header">
+            <div class="logo">
+                <img src="../imgs/placeholder-logo.png" alt="ODS WebApp">
+            </div>
+                <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Whats new</a></li>
+                    <li><a href="#">About us </a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+        </header>
         <div class = "profilepic">
-        <img src="../imgs/placeholder-logo.png" alt="Profile Picture">
-        <div class = "pfploc-rev">
-        <ul>
-            <li>PROFILE NAME</li>
-            <li>LOCATION</li>
-            <li>STARS</li>
-        </div>
-        </ul>
+            <img src="../imgs/placeholder-logo.png" alt="Profile Picture">
+            <div class = "pfploc-rev">
+                <ul>
+                    <li>PROFILE NAME</li>
+                    <li>LOCATION</li>
+                    <li>STARS</li>
+                </ul>
+            </div>
         </div>
 
         <div class = "bio">
             <h1>BIO:</h1>
             <p>Lorem ipsum tang ina nyo tinulugan nyo nanaman kami AAAAAAAAAAAAAAAAAAA</p>
         </div>
+        <div class="outer-latereviews">
+            <div class = "latest-reviews">
 
-        <div class = "latest-reviews">
-
+            </div>  
         </div>
-
         <div class = "joblist">
             <div class = "joblist-inner">
                 <div class = "joblist-main">
@@ -71,11 +70,33 @@
             </div>
         </div>
 
-        <div class = "icons"> 
-        <a href="#" class="messagesbtn"><img src="../imgs/messages.png" alt="Messages"></a>
-        <a href="#" class="mailsbtn"><img src="../imgs/mails.png" alt="Mails"></a>
-        <a href="#" class="homebtn"><img src="../imgs/home.png" alt="Home"></a>
+        <div id="chatwindow">
+            <div class="outer-chatlist">
+                <div class="chatlist">
+
+                </div>
+            </div>
+            <div class="outer-chatmessages">
+                <div class="chatmessages">
+                    <textarea id="chatinput" placeholder="Type Your Message..." oninput="autoExpand(this)"></textarea>
+                    <button id="sendmessage">
+                        <img src="../imgs/sendicon.jpg" alt="send">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class = "icons">
+            <button id="messagesbtn" onclick="message(event)">
+                <img src="../imgs/messages.png" alt="Messages">
+            </button>
+            <button class="mailsbtn" name="mails">
+                <img src="../imgs/mails.png" alt="Mails">
+            </button>
+            <button class="homebtn" name="home">
+                <img src="../imgs/home.png" alt="Home">
+            </button>
         </div>
         <script src="../jscript/search.js"></script>
-</body>
+    </body>
 </html>

@@ -113,24 +113,32 @@ body {
     text-align: center; 
 }
 
+.outer-latereviews{
+    width: 100%; 
+    border-top: 1px solid black;
+    position: absolute; 
+    left: 0px; 
+    top: 400px; 
+}
+
 .latest-reviews {
     width: 300px; 
-    height: 800px; 
+    height: 750px; 
     background-color: #f0f4f8; 
     border-radius: 15px; 
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin: 20px; 
     position: absolute; 
-    left: 20px; 
-    top: 380px; 
+    left: 100px; 
+    top: 55px; 
 }
 
 .joblist {
     width: 1280px; 
-    height: 1000px; 
+    height: 1005px; 
     background-color: white; 
-    border: 1px solid black; 
+    border-top: 1px solid black; 
+    border-left: 1px solid black; 
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin: 20px; 
@@ -167,12 +175,12 @@ body {
 .icons {
     position: absolute; 
     bottom: -510px; 
-    left: 0px; 
+    left: 0px;
     border-top: 1px solid black;
     padding: 10px; 
     background-color: white;
     height: 100px;
-    width: 521px;
+    width: 522px;
     display: flex; /* Use Flexbox */
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
@@ -233,4 +241,143 @@ body {
 .job p {
     margin: 5px 0;
     color: #555;
+}
+
+.icons button{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: white !important;
+    border-style: none;
+}
+
+.icons img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.outer-chatmessages{
+    position: absolute;
+    height: 85%;
+    width: 65%;
+    right: 0%;
+    bottom: 0%;
+    border-top: 2px solid black;
+    border-left: 1px solid black;
+
+  }
+
+  .outer-chatlist{
+    position: absolute;
+    height: 85%;
+    width: 65%;
+    left: 0%;
+    bottom: 0%;
+    border-top: 2px solid black;
+  }
+
+#chatwindow {
+    position: fixed;
+    z-index:  9999;
+    bottom: 10px;
+    right: 10px;
+    height: 70%;
+    width: 50%;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  #chatwindow.show {
+    display: block;
+  }
+
+  
+  .chatmessages {    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 88%;
+    width: 92%;
+    right: 15px;
+    bottom: 0;
+    padding: 10px 10px 45px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow-y: auto;
+    background-color: gray;
+    scrollbar-width: none;
+  }
+  
+  #chatinput {
+    width: 31%;
+    height: 40px;
+    max-height: 400px;
+    padding: 10px 35px 10px 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 7px;
+    right: 21px;
+    border: 1px solid gray;
+    resize: none;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-family: Helvetica;
+    font-size: 20px;
+    outline: none;
+}
+
+  #sendmessage {
+    position: fixed;
+    bottom: 18px;
+    right: 30px;
+    margin: 5px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#sendmessage img {
+    height: 35px;
+    width: 50px;
+    object-fit: contain;
+    border-radius: 10px;
+    outline: none;
+}
+
+.message {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    max-width: 50%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+.sent {
+    align-self: flex-end;
+    background-color: skyblue;
+    color: white;
+}
+
+.received {
+    align-self: flex-start;
+    background-color: lightgray;
+    color: black;
 }
