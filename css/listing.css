@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('bg.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333; 
+    padding: 15px 50px;
+}
+
+.logo img {
+    padding-top: 10px;
+    width: auto;
+    height: auto;
+}
+
+.profile_btn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('ods_img/terrifiednootnoot.jpg');
+    border: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: auto;
+}
+
+.container {
+    display: relative;
+    width: auto;
+    height: 1000px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #FFFFFF;
+    border-left: 2px solid#909090;
+    border-right: 2px solid#909090;
+}
+
+.inner-cont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 120px;
+    margin-left: 100px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    width: auto;
+    height: 829px;
+}
+
+.ratings {
+    position: absolute;
+    left: 8.5%;
+    background-color: #f3f8fe; 
+    width: 300px;
+    height: 680px;
+    border-radius: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 8% 5% 5% 14%;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.outercont{
+    position: absolute;
+    left: 5.5%;
+    border-top: 2px solid #909090;
+    border-bottom: 2px solid #909090;
+    width: 549px;
+    height: 770px;
+}
+
+.stars {
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: gold; /* Star color */
+    letter-spacing: 3px;
+    padding-right: 15px;
+}
+
+.text {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text li {
+    padding-left: 15px;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-bottom: 1px solid #e0e0e0; /* Light separator */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratings h2{
+    text-align: center;
+    margin-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.create {
+    position: absolute;
+    right: 200px;
+    justify-content: flex-end; /* Moves .create button to the right */
+    margin-top: 60px;
+    padding-right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #E6A16E;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.task{
+    text-align: center;
+    background-color: #d3d3d3; 
+    width: 980px;
+    height: 765px;
+    border-radius: 30px;
+    margin: 4% 5% 5% 6%;
+    padding: 50px;
+}
+
+.view{
+    position:absolute;
+    right: 5.5%;
+    border-top: 2px solid #909090;
+    border-left: 2px solid #909090;
+    width: 1110px;
+    height: 860px;
+    margin-left: 10%;
+}
+
+.icons {
+    position: absolute; 
+    bottom: -95px; 
+    left: 6px;
+    padding: 10px; 
+    height: 100px;
+    width: 522px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.icons button{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: white !important;
+    border-style: none;
+}
+
+.icons img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.outer-chatmessages{
+    position: absolute;
+    height: 85%;
+    width: 65%;
+    right: 0%;
+    bottom: 0%;
+    border-top: 2px solid black;
+    border-left: 1px solid black;
+
+  }
+
+  .outer-chatlist{
+    position: absolute;
+    height: 85%;
+    width: 65%;
+    left: 0%;
+    bottom: 0%;
+    border-top: 2px solid black;
+  }
+
+#chatwindow {
+    position: fixed;
+    z-index:  9999;
+    bottom: 10px;
+    right: 10px;
+    height: 70%;
+    width: 50%;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  #chatwindow.show {
+    display: block;
+  }
+
+  
+  .chatmessages {    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 98%;
+    width: 96%;
+    right: 15px;
+    bottom: 0;
+    padding: 10px 10px 45px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow-y: auto;
+    background-color: gray;
+    scrollbar-width: none;
+  }
+  
+  #chatinput {
+    width: 31%;
+    height: 40px;
+    max-height: 400px;
+    padding: 10px 35px 10px 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 7px;
+    right: 22px;
+    border: 1px solid gray;
+    resize: none;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-family: Helvetica;
+    font-size: 20px;
+    outline: none;
+}
+
+  #sendmessage {
+    position: fixed;
+    bottom: 18px;
+    right: 32px;
+    margin: 5px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#sendmessage img {
+    height: 35px;
+    width: 50px;
+    object-fit: contain;
+    border-radius: 10px;
+    outline: none;
+}
+
+.message {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    max-width: 50%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+.sent {
+    align-self: flex-end;
+    background-color: skyblue;
+    color: white;
+}
+
+.received {
+    align-self: flex-start;
+    background-color: lightgray;
+    color: black;
+}
